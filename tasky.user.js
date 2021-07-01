@@ -12,7 +12,8 @@
 
 (function() {
     'use strict';
-    alert('tasky running');
-    jQuery("li:contains('Task Timer läuft')").click();
-    // Your code here...
+    $(function() {
+        alert('tasky 3 running');
+        jQuery("li:contains('Task Timer läuft')").click();
+    }
 })();
