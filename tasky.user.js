@@ -14,7 +14,7 @@
         return new Promise(resolve => setTimeout(resolve, ms));
     }
     async function activate_filter(){
-        await sleep(2000);
+        await sleep(5000);
         console.log("attempting filter");
         jQuery("li:contains('Task Timer läuft')").click();
     }
