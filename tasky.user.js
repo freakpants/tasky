@@ -12,6 +12,7 @@
 
 (function() {
     'use strict';
+    alert('tasky 3 running');
     jQuery(function() {
         alert('tasky 3 running');
         jQuery("li:contains('Task Timer läuft')").click();
