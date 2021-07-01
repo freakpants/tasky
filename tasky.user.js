@@ -53,7 +53,7 @@
         jQuery("body").append("<div style='display:flex; justify-content:center; align-items:center; width:100vw; height: 100vh'><h1 style='font-weight: 600; text-transform:uppercase' id='tasky_message'></h1></div>");
         loop();
         async function loop(){
-            for(var i = 0; i < 10; i++){
+            while(true){
                 window.location.href = "https://odoo.simpit.ch/web#view_type=kanban&model=project.task&action=529";
                 await asleep(3000);
                 filter_view();
