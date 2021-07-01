@@ -13,8 +13,8 @@
 (function() {
     'use strict';
     alert('tasky 3 running');
-    jQuery(function() {
+    $(function() {
         alert('tasky 3 running');
-        jQuery("li:contains('Task Timer läuft')").click();
+        $("li:contains('Task Timer läuft')").click();
     }
 })();
