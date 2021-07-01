@@ -6,6 +6,7 @@
 // @author       freakpants
 // @match        https://odoo.simpit.ch/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @require      http://code.jquery.com/jquery-3.6.0.min.js
 // @grant        none
 // ==/UserScript==
 
