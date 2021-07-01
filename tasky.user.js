@@ -6,15 +6,21 @@
 // @author       freakpants
 // @match        https://odoo.simpit.ch/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-// @require      http://code.jquery.com/jquery-3.6.0.min.js
 // @grant        none
 // ==/UserScript==
 
 (function() {
-    'use strict';
-    alert('tasky 3 running');
-    $(function() {
-        alert('tasky 3 running');
-        $("li:contains('Task Timer läuft')").click();
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
+    async function activate_filter(){
+        await sleep(2000);
+        console.log("attempting filter");
+        jQuery("li:contains('Task Timer läuft')").click();
+    }
+    'use strict';
+    jQuery(function() {
+        console.log('tasky 6 running');
+        activate_filter();
+    });
 })();
